@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=family=Open+Sans:wght@300;600&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ddfaec;
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  margin-top: 65px;
+  margin-bottom: 40px;
+  font-size: 50px;
+}
+
+.tarefas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(55, 56, 56);
+  background-color: transparent;
+}
+
+button {
+  border: 1px solid rgb(55, 56, 56);
+  border-radius: 5px;
+  background-color: rgb(94, 180, 180);
+  color: rgb(233, 243, 243);
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task-item label{
+  margin-left: 7px;
+}
+
+:checked + label {
+  text-decoration: line-through;
+  color: rgb(70, 67, 117);
+}
